@@ -38,6 +38,15 @@ h3 {
     cursor: pointer;
 }
 
+.card-back {
+    position: relative;
+    background-color: tomato;
+    top: 8%;
+    left: 8%;
+    width: 84%;
+    height: 84%;
+}
+
 .score-box {
     border: 5px #fff solid;
     margin-top: 100px;
