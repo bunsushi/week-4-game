@@ -38,18 +38,37 @@ h3 {
     cursor: pointer;
 }
 
-.card-back {
+/* .card-back {
+    display: inline-block;
     position: relative;
     background-color: tomato;
     top: 8%;
     left: 8%;
     width: 84%;
     height: 84%;
+} */
+
+.gameboard {
+    text-align: center;
+}
+
+.card-back {
+    display: inline-block;
+    height: 300px;
+    width: 220px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.card-back:hover {
+    transform: rotate(-1deg);
+    cursor: pointer;
 }
 
 .score-box {
     border: 5px #fff solid;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 0 20px 20px 20px;
     width: 100%;
     text-align: center;
