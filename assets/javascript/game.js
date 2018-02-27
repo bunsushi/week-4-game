@@ -45,6 +45,11 @@ $(document).ready(function () {
             wins++;
             $("#wins").text(wins);
             complete = true;
+
+            revealCard();
+
+            // $("[data-cardvalue=1]").attr("src", "assets/images/1-heart.png");
+            // $("[data-cardvalue=2]").attr("src", "assets/images/2-heart.png");            
         }
     };
 
@@ -54,7 +59,26 @@ $(document).ready(function () {
             losses++;
             $("#losses").text(losses);
             complete = true;
+
+            revealCard();
         }
+    }
+
+    // REVEAL PLAYING CARD FACE
+    function revealCard() {
+        $("[data-cardvalue=1]").attr("src", "assets/images/1-heart.png");
+        $("[data-cardvalue=2]").attr("src", "assets/images/2-heart.png");
+        $("[data-cardvalue=3]").attr("src", "assets/images/3-heart.png");
+        $("[data-cardvalue=4]").attr("src", "assets/images/4-heart.png");
+        $("[data-cardvalue=5]").attr("src", "assets/images/5-heart.png");
+        $("[data-cardvalue=6]").attr("src", "assets/images/6-heart.png");
+        $("[data-cardvalue=7]").attr("src", "assets/images/7-heart.png");
+        $("[data-cardvalue=8]").attr("src", "assets/images/8-heart.png");
+        $("[data-cardvalue=9]").attr("src", "assets/images/9-heart.png");
+        $("[data-cardvalue=10]").attr("src", "assets/images/10-heart.png");
+        $("[data-cardvalue=11]").attr("src", "assets/images/11-heart.png");
+        $("[data-cardvalue=12]").attr("src", "assets/images/12-heart.png");
+        $("[data-cardvalue=13]").attr("src", "assets/images/13-heart.png");
     }
 
     makePlayingCards();
@@ -68,7 +92,7 @@ $(document).ready(function () {
             playerTotal = 0;
             $("#player-total").text(playerTotal);
             complete = false;
-            makePlayingCards(); // this generates new cards but no on-click     
+            makePlayingCards();
         }
 
         else {
